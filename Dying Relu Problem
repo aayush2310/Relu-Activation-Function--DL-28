@@ -1,0 +1,17 @@
+It happens that if i apply relu then whatever i/p i give,some of the neuron's o/p is always 0,that neuron is called dead neuron bcz it is not learning anything.for any change
+in i/p the o/p is not changing.and it is forever dead.This is dying relu problem.
+
+This is bcz. for z<=0 o/p is 0,once the  o/p comes to be 0,the further terms all become 0.
+
+reasons for z<=0:-
+1)high learning rate
+2)high -ve bias
+
+solutions:-
+1)To set low learning rate
+2)set bias to +ve value
+3)dont use relu,use its variant.
+
+variants:-
+1)linear variants:-obtained by applying linear transformation on relu=>leaky relu,parametric relu
+2)Non linear variants:-obtained by applying non linear transformation on relu=>exponential linear unit,scaled exponential linear unit
